@@ -76,10 +76,11 @@ export function Home() {
             {bridgeNodes.flatMap((n, i) => {
               const connector =
                 i > 0 ? (
-                  <div key={`c-${n.title}`} aria-hidden className="relative mx-auto my-4 h-10 w-px bg-strong lg:mx-0 lg:my-0 lg:h-px lg:w-10 lg:self-center lg:bg-strong">
-                    <span className="connector-dot absolute left-0 top-1/2 hidden h-2 w-2 -translate-y-1/2 rotate-45 bg-acc lg:block" />
-                  </div>
-                ) : null;
+<div
+              key={`c-${n.title}`}
+              aria-hidden
+              className="mx-auto my-4 h-10 w-px bg-strong lg:mx-0 lg:my-0 lg:h-px lg:w-10 lg:self-center"
+            />                ) : null;
               return [
                 connector,
                 <Reveal key={n.title} delay={i * 130}>

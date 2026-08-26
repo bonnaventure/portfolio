@@ -243,26 +243,6 @@ body {
   animation: drift-b 22s ease-in-out infinite;
 }
 
-.connector-dot {
-  animation: connector-x 2.8s cubic-bezier(0.45, 0, 0.55, 1) infinite;
-}
-@keyframes connector-x {
-  0% {
-    left: 0%;
-    opacity: 0;
-  }
-  14% {
-    opacity: 1;
-  }
-  86% {
-    opacity: 1;
-  }
-  100% {
-    left: 100%;
-    opacity: 0;
-  }
-}
-
 /* hover sweep across cards */
 .sweep {
   position: relative;
