@@ -71,44 +71,6 @@ export function LineReveal({ children, delay = 0, className = "" }: RevealProps)
   );
 }
 
-const GLYPHS = "▓▒░<>/\\{}[]=+*#%&";
-
-/** Scramble-decode effect. Returns the animating string. */
-export function useScramble(text: string, delay = 0): string {
-  const reduced = usePrefersReducedMotion();
-  const [out, setOut] = useState(() => (reduced ? text : text.replace(/[^\s]/g, " ")));
-  useEffect(() => {
-    if (reduced) {
-      setOut(text);
-      return;
-    }
-    let raf = 0;
-    let frame = 0;
-    const totalFrames = Math.max(26, Math.round(text.length * 0.9));
-    const timer = window.setTimeout(() => {
-      const tick = () => {
-        frame += 1;
-        const revealed = Math.floor((frame / totalFrames) * text.length);
-        let s = "";
-        for (let i = 0; i < text.length; i += 1) {
-          const c = text[i];
-          if (c === " " || i < revealed) s += c;
-          else if (i < revealed + 7) s += GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
-          else s += " ";
-        }
-        setOut(frame >= totalFrames ? text : s);
-        if (frame < totalFrames) raf = requestAnimationFrame(tick);
-      };
-      raf = requestAnimationFrame(tick);
-    }, delay);
-    return () => {
-      window.clearTimeout(timer);
-      cancelAnimationFrame(raf);
-    };
-  }, [text, delay, reduced]);
-  return out;
-}
-
 /** Ticking local clock (HH:MM:SS). */
 export function useClock(): string {
   const [now, setNow] = useState(() => new Date());

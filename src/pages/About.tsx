@@ -4,7 +4,7 @@ import { bio, competencies, profile, timeline } from "../content/site";
 import { Link } from "../lib/router";
 import { Barcode, IconArrowNE, IconMail } from "../components/Icons";
 
-const PORTRAIT_URL = "https://image.qwenlm.ai/generated-images/00017297-a4a9-4537-8f24-78b05212daf3/_result.png";
+const PORTRAIT_URL = "https://image.qwenlm.ai/generated-images/ee5b9022-22b7-4725-8079-8e9c7babfd32/_result.png";
 
 const exploring = ["AI merchandising agents", "Server-side tracking", "Composable commerce", "AEO strategy", "Edge personalization"];
 
