@@ -1,0 +1,61 @@
+================================================================================
+JARON WHITTINGHAM
+Senior Leader — E-Commerce, MarTech & Digital Transformation
+================================================================================
+
+CONTACT
+  Email     hello@jaronwhittingham.com
+  Web       jaronwhittingham.com
+  Location  North America · Remote-friendly
+
+--------------------------------------------------------------------------------
+PROFILE
+--------------------------------------------------------------------------------
+15+ years operating at the intersection of creativity, technology, and data —
+from hands-on Webmaster duties to E-Commerce and MarTech leadership. I bridge
+technical web management, enterprise MarTech migrations, and e-commerce
+revenue, turning disconnected systems into unified growth engines.
+
+--------------------------------------------------------------------------------
+SELECTED ENGAGEMENTS
+--------------------------------------------------------------------------------
+1. UNIFIED E-COMMERCE & FACILITY MANAGEMENT ECOSYSTEM — Mini Mall Storage
+   Real-time API integration between a WordPress e-commerce front end and
+   Storagely / Yardi back ends. Eliminated data silos, automated inventory
+   syncing, 3.2x online booking growth.
+
+2. ENTERPRISE MARTECH MODERNIZATION (LEGACY TO SAP) — UFA
+   Led migration to CRM-powered SAP Marketing Cloud with Salesforce
+   integration. Hyper-segmentation via e-commerce match-lists drove a 90%
+   increase in e-commerce transactions from email.
+
+3. HEADLESS CMS ARCHITECTURE MIGRATION — Shaw Communications
+   Directed migration from monolithic Ektron/Drupal to Contentful. True
+   omnichannel publishing, -44% median LCP, 12x faster publish cycles.
+
+--------------------------------------------------------------------------------
+TECH STACK
+--------------------------------------------------------------------------------
+Transformation & CMS   Contentful · SAP Marketing Cloud · Salesforce ·
+                       WordPress · Storagely
+E-Commerce & Growth    Shopify / Shopify Plus · DTC & B2B · CRO · Klaviyo
+Data & Analytics       GA4 · BigQuery · SQL · Python · Snowflake · Tableau
+Ops & Leadership       Agile / Scrum (PSM I) · Jira · Asana
+
+--------------------------------------------------------------------------------
+CORE COMPETENCIES
+--------------------------------------------------------------------------------
+Conversion Rate Optimization (CRO) · AEO / GEO (Answer & Generative Engine
+Optimization) · AI-Augmented Workflows · Product-Led Growth (PLG) ·
+Catalog & Data Hygiene · Lifecycle Marketing · Headless / Composable
+Architecture · Stakeholder & Vendor Leadership
+
+--------------------------------------------------------------------------------
+CAREER ARC
+--------------------------------------------------------------------------------
+2009–2013  Webmaster & Digital Operations — hands-on CMS, code, analytics
+2013–2017  E-Commerce & CRM Manager — DTC operations, lifecycle email
+2017–2021  MarTech & Digital Platform Lead — enterprise migrations
+2021–Now   Senior Leader, E-Commerce & Digital Transformation
+
+================================================================================
