@@ -41,7 +41,7 @@ export function CaseStudyDetail({ slug }: { slug: string }) {
   if (!study) {
     return (
       <section className="mx-auto max-w-6xl px-5 pb-24 pt-44 text-center">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-acc">404 · entry not found</p>
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-acc">404 · Not found</p>
         <h1 className="mt-4 font-display text-3xl font-bold tracking-tight">No case study at this slug.</h1>
         <Link to="/case-studies" className="link-underline mt-6 inline-block font-mono text-xs uppercase tracking-[0.2em] text-acc">
           ← Back to the index
@@ -80,7 +80,7 @@ export function CaseStudyDetail({ slug }: { slug: string }) {
               Index
             </Link>
             <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-mute">
-              case-studies / <span className="text-acc">{study.slug}</span>
+              Case studies / <span className="text-acc">{study.client}</span>
             </p>
           </nav>
         </Reveal>
@@ -119,7 +119,7 @@ export function CaseStudyDetail({ slug }: { slug: string }) {
           {/* body */}
           <div className="lg:col-span-8">
             <Reveal>
-              <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-acc">// abstract</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-acc">Abstract</p>
               <p className="mt-3 max-w-2xl text-lg font-medium leading-relaxed text-ink">{study.summary}</p>
             </Reveal>
 
@@ -146,7 +146,7 @@ export function CaseStudyDetail({ slug }: { slug: string }) {
               <Reveal delay={120}>
                 <div className="border border-line bg-surface">
                   <p className="border-b border-line px-5 py-3 font-mono text-[10px] uppercase tracking-[0.24em] text-mute">
-                    engagement.snapshot
+                    Engagement snapshot
                   </p>
                   <ul className="divide-y divide-line">
                     {study.metrics.map((m) => (
@@ -158,7 +158,7 @@ export function CaseStudyDetail({ slug }: { slug: string }) {
                     ))}
                   </ul>
                   <div className="border-t border-line px-5 py-4">
-                    <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-mute">stack</p>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-mute">Stack</p>
                     <ul className="mt-2.5 flex flex-wrap gap-1.5">
                       {study.stack.map((s) => (
                         <li key={s} className="border border-line bg-paper px-2 py-1 font-mono text-[10px] uppercase tracking-[0.1em] text-soft">
@@ -168,7 +168,7 @@ export function CaseStudyDetail({ slug }: { slug: string }) {
                     </ul>
                   </div>
                   <div className="border-t border-line px-5 py-4">
-                    <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-mute">disciplines</p>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-mute">Disciplines</p>
                     <ul className="mt-2.5 flex flex-wrap gap-1.5">
                       {study.tags.map((t) => (
                         <li key={t} className="border border-line bg-paper px-2 py-1 font-mono text-[10px] uppercase tracking-[0.1em] text-mute">
@@ -197,7 +197,7 @@ export function CaseStudyDetail({ slug }: { slug: string }) {
             </Link>
           ) : (
             <div className="bg-surface p-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-mute">◦ start of index</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-mute">Start of index</p>
             </div>
           )}
           {next ? (
@@ -215,7 +215,7 @@ export function CaseStudyDetail({ slug }: { slug: string }) {
             </Link>
           ) : (
             <div className="bg-surface p-6 text-right">
-              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-mute">end of index ◦</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-mute">End of index</p>
             </div>
           )}
         </nav>

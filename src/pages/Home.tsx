@@ -87,7 +87,7 @@ export function Home() {
                     <span className="flex items-center justify-between">
                       <span className="text-acc">{n.icon}</span>
                       <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-mute">
-                        NODE-{String(i + 1).padStart(2, "0")}
+                        Discipline {["I", "II", "III"][i]}
                       </span>
                     </span>
                     <h3 className="mt-5 font-display text-lg font-semibold tracking-tight">{n.title}</h3>
@@ -99,8 +99,8 @@ export function Home() {
           </div>
           <Reveal delay={200}>
             <p className="mt-10 text-center font-mono text-[11px] uppercase tracking-[0.24em] text-mute">
-              web management <span className="text-acc">→</span> martech <span className="text-acc">→</span> revenue
-              <span className="ml-3 text-acc">// one continuous system</span>
+              Web management <span className="text-gold">→</span> MarTech <span className="text-gold">→</span> Revenue
+              <span className="ml-3 text-acc">one continuous system</span>
             </p>
           </Reveal>
         </div>
@@ -152,17 +152,15 @@ export function Home() {
       </section>
 
       {/* ---- 05 cta ---- */}
-      <section className="border-t border-line bg-ink text-paper transition-colors dark:bg-surface dark:text-ink" aria-label="Contact">
+      <section className="border-t border-navy bg-navy text-navyink" aria-label="Contact">
         <div className="mx-auto max-w-6xl px-5 py-20 sm:py-24">
           <div className="grid items-center gap-10 lg:grid-cols-12">
             <div className="lg:col-span-8">
-              <p className="eyebrow" style={{ color: "var(--strong)" }}>
-                Next engagement
-              </p>
+              <p className="eyebrow text-navyink/60">Next engagement</p>
               <Reveal delay={80}>
                 <h2 className="mt-4 font-display text-[clamp(1.9rem,4vw,3.2rem)] font-bold leading-[1.08] tracking-tight">
                   <span className="block">Let&rsquo;s build your next</span>
-                  <span className="block text-acc">operating model.</span>
+                  <span className="block text-gold">operating model.</span>
                 </h2>
               </Reveal>
             </div>
@@ -171,7 +169,7 @@ export function Home() {
                 <div className="flex flex-col gap-3.5">
                   <a
                     href={`mailto:${profile.email}`}
-                    className="group inline-flex items-center justify-between gap-4 bg-acc px-6 py-4 font-mono text-xs uppercase tracking-[0.18em] text-accink transition-transform duration-300 hover:-translate-y-0.5"
+                    className="group inline-flex items-center justify-between gap-4 bg-gold px-6 py-4 font-mono text-xs font-medium uppercase tracking-[0.18em] text-navy transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-gold/20"
                   >
                     {profile.email}
                     <IconArrowNE className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -179,7 +177,7 @@ export function Home() {
                   <a
                     href={profile.resumeHref}
                     download
-                    className="inline-flex items-center justify-between gap-4 border border-strong px-6 py-4 font-mono text-xs uppercase tracking-[0.18em] text-soft transition-colors duration-300 hover:border-acc hover:text-acc"
+                    className="inline-flex items-center justify-between gap-4 border border-navyink/35 px-6 py-4 font-mono text-xs uppercase tracking-[0.18em] text-navyink/85 transition-colors duration-300 hover:border-gold hover:text-gold"
                   >
                     Download résumé <span aria-hidden>↓</span>
                   </a>

@@ -35,7 +35,7 @@ export function Header({ route }: { route: Route }) {
       {/* status strip */}
       <div className="hidden border-b border-line bg-paper/80 backdrop-blur-md sm:block">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em] text-mute">
-          <span>JW://portfolio · v2.6.0</span>
+          <span>JW · Executive portfolio — 2026</span>
           <span className="flex items-center gap-2">
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-acc pulse-ring" />
             <span className="text-acc">Open to leadership roles</span>

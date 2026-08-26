@@ -4,7 +4,7 @@ import { bio, competencies, profile, timeline } from "../content/site";
 import { Link } from "../lib/router";
 import { Barcode, IconArrowNE, IconMail } from "../components/Icons";
 
-const PORTRAIT_URL = "https://image.qwenlm.ai/generated-images/5a62ad1a-1a39-45df-bec4-3b38994e3292/_result.png";
+const PORTRAIT_URL = "https://image.qwenlm.ai/generated-images/00017297-a4a9-4537-8f24-78b05212daf3/_result.png";
 
 const exploring = ["AI merchandising agents", "Server-side tracking", "Composable commerce", "AEO strategy", "Edge personalization"];
 
@@ -37,7 +37,7 @@ export function About() {
                 />
               </div>
               <figcaption className="flex items-center justify-between border-t border-line px-4 py-3">
-                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-mute">op-profile // render 2026</span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-mute">Executive profile — 2026</span>
                 <Barcode className="h-4 w-20 text-strong" />
               </figcaption>
             </figure>
@@ -55,7 +55,7 @@ export function About() {
 
             <Reveal delay={260}>
               <div className="mt-9 border border-line bg-surface p-5">
-                <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-acc">// currently exploring</p>
+                <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-acc">Currently exploring</p>
                 <ul className="mt-3.5 flex flex-wrap gap-2">
                   {exploring.map((e) => (
                     <li
@@ -73,7 +73,7 @@ export function About() {
               <div className="mt-9 flex flex-wrap gap-4">
                 <a
                   href={`mailto:${profile.email}`}
-                  className="group inline-flex items-center gap-2.5 bg-ink px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-paper transition-colors duration-300 hover:bg-acc"
+                  className="group inline-flex items-center gap-2.5 bg-acc px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-accink transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-acc/25"
                 >
                   <IconMail className="h-4 w-4" /> {profile.email}
                 </a>
