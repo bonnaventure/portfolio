@@ -16,43 +16,43 @@
   --color-gold: var(--gold);
   --color-navy: var(--navy);
   --color-navyink: var(--navy-ink);
-  --font-display: "Archivo", "Inter", system-ui, sans-serif;
+  --font-display: "Inter", system-ui, sans-serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
-/* ---- Executive palette: porcelain + deep navy ink, cobalt accent, gold highlight ---- */
+/* ---- Corporate Memphis: clean, minimal, warm neutrals with soft accent colors ---- */
 
 :root {
-  --paper: #f4f6fa;
+  --paper: #faf9f8;
   --surface: #ffffff;
-  --raise: #edf1f7;
-  --ink: #101b2e;
-  --soft: #40506a;
-  --mute: #6e7d96;
-  --line: #e1e7f0;
-  --strong: #c2ccdc;
-  --acc: #1f56c4;
+  --raise: #f5f4f2;
+  --ink: #1a1a1a;
+  --soft: #4a4a4a;
+  --mute: #8a8a8a;
+  --line: #e8e6e3;
+  --strong: #d4d2cf;
+  --acc: #5b7c99;
   --acc-ink: #ffffff;
-  --gold: #a97f22;
-  --navy: #101f3e;
-  --navy-ink: #f3f6fc;
+  --gold: #d4a574;
+  --navy: #2d3436;
+  --navy-ink: #faf9f8;
 }
 
 .dark {
-  --paper: #0b1220;
-  --surface: #121b2f;
-  --raise: #1b2742;
-  --ink: #e9edf6;
-  --soft: #bac6db;
-  --mute: #7f8da8;
-  --line: #233050;
-  --strong: #3b4d74;
-  --acc: #7ea4ff;
-  --acc-ink: #0a1226;
-  --gold: #e0b95f;
-  --navy: #142447;
-  --navy-ink: #eef2fa;
+  --paper: #1a1a1a;
+  --surface: #242424;
+  --raise: #2a2a2a;
+  --ink: #f0f0f0;
+  --soft: #b0b0b0;
+  --mute: #7a7a7a;
+  --line: #333333;
+  --strong: #444444;
+  --acc: #7a9ab8;
+  --acc-ink: #1a1a1a;
+  --gold: #c9a066;
+  --navy: #2d3436;
+  --navy-ink: #f0f0f0;
 }
 
 html {

@@ -33,7 +33,7 @@ export function Header({ route }: { route: Route }) {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       {/* status strip */}
-      <div className="hidden border-b border-line bg-paper/80 backdrop-blur-md sm:block">
+      <div className="hidden border-b border-line bg-paper/90 backdrop-blur-sm sm:block">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em] text-mute">
           <span>JW · Executive portfolio — 2026</span>
           <span className="flex items-center gap-2">
@@ -44,10 +44,10 @@ export function Header({ route }: { route: Route }) {
       </div>
 
       {/* main nav */}
-      <div className="border-b border-line bg-paper/85 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5">
+      <div className="border-b border-line bg-paper/95 backdrop-blur-sm">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
           <Link to="/" className="group flex items-center gap-3" aria-label="Home">
-            <span className="grid h-9 w-9 place-items-center border border-ink bg-ink font-mono text-xs font-bold text-paper transition-colors duration-300 group-hover:border-acc group-hover:bg-acc">
+            <span className="grid h-8 w-8 place-items-center border border-ink bg-ink font-mono text-xs font-bold text-paper transition-colors duration-300 group-hover:border-acc group-hover:bg-acc">
               JW
             </span>
             <span className="hidden leading-tight md:block">
@@ -87,22 +87,22 @@ export function Header({ route }: { route: Route }) {
               href={`mailto:${profile.email}`}
               className="hidden items-center gap-2 border border-strong px-3.5 py-2 font-mono text-[11px] uppercase tracking-[0.16em] text-soft transition-all duration-300 hover:border-acc hover:text-acc md:flex"
             >
-              Let&rsquo;s talk
+              Let's talk
               <span aria-hidden>→</span>
             </a>
             <button
               type="button"
               onClick={toggleTheme}
               aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
-              className="relative grid h-9 w-9 place-items-center border border-strong text-soft transition-all duration-300 hover:border-acc hover:text-acc"
+              className="relative grid h-8 w-8 place-items-center border border-strong text-soft transition-all duration-300 hover:border-acc hover:text-acc"
             >
               <IconSun
-                className={`h-4 w-4 absolute transition-all duration-500 ${
+                className={`h-3.5 w-3.5 absolute transition-all duration-500 ${
                   dark ? "rotate-0 opacity-100" : "-rotate-90 opacity-0"
                 }`}
               />
               <IconMoon
-                className={`h-4 w-4 absolute transition-all duration-500 ${
+                className={`h-3.5 w-3.5 absolute transition-all duration-500 ${
                   dark ? "rotate-90 opacity-0" : "rotate-0 opacity-100"
                 }`}
               />
@@ -112,7 +112,7 @@ export function Header({ route }: { route: Route }) {
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
-              className="grid h-9 w-9 place-items-center border border-strong text-soft transition-colors hover:border-acc hover:text-acc lg:hidden"
+              className="grid h-8 w-8 place-items-center border border-strong text-soft transition-colors hover:border-acc hover:text-acc lg:hidden"
             >
               {open ? <IconClose className="h-4.5 w-4.5" /> : <IconMenu className="h-4.5 w-4.5" />}
             </button>
