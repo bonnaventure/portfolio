@@ -36,7 +36,7 @@ export function Home() {
       <Marquee items={marqueeItems} />
 
       {/* ---- 01 featured transformations ---- */}
-      <section className="mx-auto max-w-6xl px-5 py-20 sm:py-24" aria-labelledby="featured">
+      <section className="mx-auto max-w-6xl px-5 py-16 sm:py-20" aria-labelledby="featured">
         <SectionHead
           index="01"
           eyebrow="Selected work"
@@ -65,7 +65,7 @@ export function Home() {
 
       {/* ---- 02 the bridge ---- */}
       <section className="border-y border-line bg-surface" aria-labelledby="bridge">
-        <div className="mx-auto max-w-6xl px-5 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
           <SectionHead
             index="02"
             eyebrow="The bridge"
@@ -108,7 +108,7 @@ export function Home() {
       </section>
 
       {/* ---- 03 tech stack matrix ---- */}
-      <section className="mx-auto max-w-6xl px-5 py-20 sm:py-24" aria-labelledby="stack-home">
+      <section className="mx-auto max-w-6xl px-5 py-16 sm:py-20" aria-labelledby="stack-home">
         <SectionHead
           index="03"
           eyebrow="Tech stack matrix"
@@ -129,7 +129,7 @@ export function Home() {
 
       {/* ---- 04 operating system ---- */}
       <section className="border-t border-line" aria-labelledby="os">
-        <div className="mx-auto max-w-6xl px-5 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
           <SectionHead
             index="04"
             eyebrow="Operating system"
@@ -154,13 +154,13 @@ export function Home() {
 
       {/* ---- 05 cta ---- */}
       <section className="border-t border-navy bg-navy text-navyink" aria-label="Contact">
-        <div className="mx-auto max-w-6xl px-5 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
           <div className="grid items-center gap-10 lg:grid-cols-12">
             <div className="lg:col-span-8">
               <p className="eyebrow text-navyink/60">Next engagement</p>
               <Reveal delay={80}>
                 <h2 className="mt-4 font-display text-[clamp(1.9rem,4vw,3.2rem)] font-bold leading-[1.08] tracking-tight">
-                  <span className="block">Let&rsquo;s build your next</span>
+                  <span className="block">Let's build your next</span>
                   <span className="block text-gold">operating model.</span>
                 </h2>
               </Reveal>

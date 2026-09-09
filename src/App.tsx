@@ -46,14 +46,11 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen">
-      {/* ambient background layers */}
-      <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden>
-        <div className="amb-grid absolute inset-x-0 top-0 h-[140vh]" />
-        <div className="glow drift-a left-[-10%] top-[-12%] h-[42rem] w-[42rem] bg-acc opacity-[0.07]" />
-        <div className="glow drift-b bottom-[-18%] right-[-12%] h-[46rem] w-[46rem] bg-gold opacity-[0.07]" />
+      {/* minimal ambient background */}
+      <div className="pointer-events-none fixed inset-0 -z-10" aria-hidden>
+        <div className="glow drift-a left-[-10%] top-[-12%] h-[42rem] w-[42rem] bg-acc opacity-[0.04]" />
+        <div className="glow drift-b bottom-[-18%] right-[-12%] h-[46rem] w-[46rem] bg-gold opacity-[0.03]" />
       </div>
-      {/* film grain */}
-      <div className="noise pointer-events-none fixed inset-0 z-[70]" aria-hidden />
 
       <Header route={route} />
 
