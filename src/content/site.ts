@@ -50,7 +50,7 @@ export const stackGroups: StackGroup[] = [
       { name: "SAP Marketing Cloud", note: "enterprise lifecycle engine" },
       { name: "Salesforce", note: "CRM core & customer record" },
       { name: "WordPress", note: "commerce-ready front ends" },
-      { name: "Storagely", note: "facility mgmt API ecosystem" },
+      { name: "Storagely", note: "self storage ecomm front-end" },
     ],
   },
   {
@@ -59,10 +59,10 @@ export const stackGroups: StackGroup[] = [
     title: "E-Commerce & Growth",
     tagline: "Revenue systems from storefront to retention.",
     items: [
-      { name: "Shopify / Plus", note: "DTC & B2B commerce" },
-      { name: "DTC / B2B Models", note: "channel strategy & pricing" },
-      { name: "CRO", note: "experimentation & funnel science" },
-      { name: "Klaviyo", note: "lifecycle & flow automation" },
+      { name: "Customer Experience", note: "Seamless shopping experience" },
+      { name: "Platform Management", note: "Uptime, optimization, and efficiency" },
+      { name: "Marketing & Content", note: "Awareness, acquisition & retention" },
+      { name: "Automation", note: "Segmentation, targeting & personalization" },
     ],
   },
   {
@@ -73,10 +73,8 @@ export const stackGroups: StackGroup[] = [
     items: [
       { name: "GA4", note: "product & web analytics" },
       { name: "BigQuery", note: "warehouse-scale analysis" },
-      { name: "SQL", note: "the lingua franca" },
-      { name: "Python", note: "pipelines & prototyping" },
-      { name: "Snowflake", note: "cloud data platform" },
-      { name: "Tableau", note: "executive storytelling" },
+      { name: "AI", note: "insights & automation" },
+      { name: "Looker Studio", note: "dashboards & visualization" },
     ],
   },
   {
@@ -95,18 +93,12 @@ export const stackGroups: StackGroup[] = [
 export const marqueeItems = [
   "Contentful",
   "SAP Marketing Cloud",
-  "Salesforce",
-  "Shopify Plus",
   "Klaviyo",
   "GA4",
   "BigQuery",
-  "Snowflake",
   "WordPress",
   "Yardi",
   "Storagely",
-  "Tableau",
-  "Python",
-  "SQL",
 ];
 
 /* ---------- Proficiency bars (Stack page) ---------- */
@@ -126,8 +118,6 @@ export const proficiencies: { name: string; group: string; level: number }[] = [
 
 export const bio = [
   "With over 15 years of experience spanning from hands-on Webmaster duties to E-Commerce and MarTech Leadership, I operate at the intersection of creativity, technology, and data. My career is defined by digital transformation — not as a buzzword, but as the disciplined work of turning disconnected systems into unified engines for growth.",
-  "I've rebuilt booking ecosystems on real-time APIs, led enterprise migrations to SAP Marketing Cloud and headless Contentful architectures, and carried programs from whiteboard to P&L impact. I speak engineer, marketer, and executive fluently — which is usually why the hard, cross-functional programs land on my desk.",
-  "Today I focus on the frontier: AI-augmented marketing operations, Answer Engine Optimization, and composable commerce — always in service of one question: does this move revenue, or does it just move meetings?",
 ];
 
 export interface Competency {
