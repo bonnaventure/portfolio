@@ -12,14 +12,14 @@ import { getCaseStudy } from "./content/caseStudies";
 function NotFound() {
   return (
     <section className="mx-auto flex max-w-6xl flex-col items-center px-5 pb-24 pt-48 text-center">
-      <p className="font-mono text-xs uppercase tracking-[0.3em] text-acc">err · signal lost</p>
+      <p className="font-mono text-xs uppercase tracking-[0.3em] text-acc">404 · Page not found</p>
       <h1 className="mt-4 font-display text-4xl font-bold tracking-tight sm:text-5xl">404</h1>
       <p className="mt-3 max-w-sm text-soft">This route isn't in the sitemap. The index, however, is excellent.</p>
       <Link
         to="/"
-        className="mt-8 inline-flex items-center gap-2 bg-ink px-6 py-3.5 font-mono text-xs uppercase tracking-[0.18em] text-paper transition-colors duration-300 hover:bg-acc"
+        className="mt-8 inline-flex items-center gap-2 bg-acc px-6 py-3.5 font-mono text-xs uppercase tracking-[0.18em] text-accink transition-all duration-300 hover:-translate-y-0.5"
       >
-        ← Return to base
+        ← Return home
       </Link>
     </section>
   );
@@ -46,14 +46,11 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen">
-      {/* ambient background layers */}
-      <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden>
-        <div className="amb-grid absolute inset-x-0 top-0 h-[140vh]" />
-        <div className="glow drift-a left-[-10%] top-[-12%] h-[42rem] w-[42rem] bg-acc opacity-[0.07]" />
-        <div className="glow drift-b bottom-[-18%] right-[-12%] h-[46rem] w-[46rem] bg-amber opacity-[0.06]" />
+      {/* minimal ambient background */}
+      <div className="pointer-events-none fixed inset-0 -z-10" aria-hidden>
+        <div className="glow drift-a left-[-10%] top-[-12%] h-[42rem] w-[42rem] bg-acc opacity-[0.04]" />
+        <div className="glow drift-b bottom-[-18%] right-[-12%] h-[46rem] w-[46rem] bg-gold opacity-[0.03]" />
       </div>
-      {/* film grain */}
-      <div className="noise pointer-events-none fixed inset-0 z-[70]" aria-hidden />
 
       <Header route={route} />
 

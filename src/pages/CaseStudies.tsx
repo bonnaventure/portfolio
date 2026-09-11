@@ -81,7 +81,7 @@ export function CaseStudies() {
       {/* content-system colophon */}
       <Reveal delay={120}>
         <div className="mt-14 border border-line bg-surface p-6 sm:p-7">
-          <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-acc">// under the hood</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-acc">Under the hood</p>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-soft">
             This index is a <strong className="text-ink">typed content collection</strong> — the same contract as an
             Astro <code className="font-mono text-xs text-acc">defineCollection</code>. Each case study is one

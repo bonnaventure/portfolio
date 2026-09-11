@@ -13,38 +13,46 @@
   --color-strong: var(--strong);
   --color-acc: var(--acc);
   --color-accink: var(--acc-ink);
-  --color-amber: var(--amber);
-  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --color-gold: var(--gold);
+  --color-navy: var(--navy);
+  --color-navyink: var(--navy-ink);
+  --font-display: "Inter", system-ui, sans-serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
+/* ---- Corporate Memphis: clean, minimal, warm neutrals with soft accent colors ---- */
+
 :root {
-  --paper: #f4f3ee;
-  --surface: #fbfaf6;
-  --raise: #eae8df;
-  --ink: #16191f;
-  --soft: #3d434d;
-  --mute: #69707c;
-  --line: #e0ddd2;
-  --strong: #c2beb0;
-  --acc: #0c7a52;
-  --acc-ink: #f2fbf6;
-  --amber: #a06a10;
+  --paper: #faf9f8;
+  --surface: #ffffff;
+  --raise: #f5f4f2;
+  --ink: #1a1a1a;
+  --soft: #4a4a4a;
+  --mute: #8a8a8a;
+  --line: #e8e6e3;
+  --strong: #d4d2cf;
+  --acc: #5b7c99;
+  --acc-ink: #ffffff;
+  --gold: #d4a574;
+  --navy: #2d3436;
+  --navy-ink: #faf9f8;
 }
 
 .dark {
-  --paper: #0b0d11;
-  --surface: #12151b;
-  --raise: #1b1f27;
-  --ink: #e9e7de;
-  --soft: #c3c8d1;
-  --mute: #8b93a0;
-  --line: #22272f;
-  --strong: #3b4351;
-  --acc: #31d492;
-  --acc-ink: #06231a;
-  --amber: #e6b45a;
+  --paper: #1a1a1a;
+  --surface: #242424;
+  --raise: #2a2a2a;
+  --ink: #f0f0f0;
+  --soft: #b0b0b0;
+  --mute: #7a7a7a;
+  --line: #333333;
+  --strong: #444444;
+  --acc: #7a9ab8;
+  --acc-ink: #1a1a1a;
+  --gold: #c9a066;
+  --navy: #2d3436;
+  --navy-ink: #f0f0f0;
 }
 
 html {
@@ -107,15 +115,28 @@ body {
   background-size: 100% 1px;
 }
 
+/* ---------- surfaces ---------- */
+
+.card-shadow {
+  box-shadow:
+    0 1px 2px rgb(16 27 46 / 0.05),
+    0 10px 28px -14px rgb(16 27 46 / 0.16);
+}
+.dark .card-shadow {
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 0.35),
+    0 14px 36px -18px rgb(0 0 0 / 0.6);
+}
+
 /* ---------- ambient layers ---------- */
 
 .amb-grid {
   background-image: linear-gradient(
       to right,
-      color-mix(in srgb, var(--line) 62%, transparent) 1px,
+      color-mix(in srgb, var(--line) 55%, transparent) 1px,
       transparent 1px
     ),
-    linear-gradient(to bottom, color-mix(in srgb, var(--line) 62%, transparent) 1px, transparent 1px);
+    linear-gradient(to bottom, color-mix(in srgb, var(--line) 55%, transparent) 1px, transparent 1px);
   background-size: 44px 44px;
   mask-image: radial-gradient(ellipse 95% 85% at 50% 0%, black 25%, transparent 80%);
   -webkit-mask-image: radial-gradient(ellipse 95% 85% at 50% 0%, black 25%, transparent 80%);
@@ -123,10 +144,10 @@ body {
 
 .noise {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
-  opacity: 0.05;
+  opacity: 0.04;
 }
 .dark .noise {
-  opacity: 0.08;
+  opacity: 0.06;
 }
 
 .glow {
@@ -222,40 +243,6 @@ body {
   animation: drift-b 22s ease-in-out infinite;
 }
 
-.connector-dot {
-  animation: connector-x 2.8s cubic-bezier(0.45, 0, 0.55, 1) infinite;
-}
-@keyframes connector-x {
-  0% {
-    left: 0%;
-    opacity: 0;
-  }
-  14% {
-    opacity: 1;
-  }
-  86% {
-    opacity: 1;
-  }
-  100% {
-    left: 100%;
-    opacity: 0;
-  }
-}
-
-.caret {
-  animation: caret-blink 1.1s step-end infinite;
-}
-@keyframes caret-blink {
-  0%,
-  49% {
-    opacity: 1;
-  }
-  50%,
-  100% {
-    opacity: 0;
-  }
-}
-
 /* hover sweep across cards */
 .sweep {
   position: relative;
@@ -268,7 +255,7 @@ body {
   background: linear-gradient(
     105deg,
     transparent 42%,
-    color-mix(in srgb, var(--acc) 9%, transparent) 50%,
+    color-mix(in srgb, var(--acc) 8%, transparent) 50%,
     transparent 58%
   );
   transform: translateX(-130%);
